@@ -10,6 +10,8 @@ Example input:
 
 The automation understands the intent, extracts event details using AI, creates the calendar event, and returns a smart confirmation response.
 
+For more details, read the automation_details.md file    
+
 
 ## the workflow 
 <img width="1365" height="644" alt="image" src="https://github.com/user-attachments/assets/c38b24c9-f4c5-4c1d-8aee-4286ede9bc3b" />
