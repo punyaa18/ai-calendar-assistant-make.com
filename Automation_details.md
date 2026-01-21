@@ -147,3 +147,8 @@ WhatsApp / Slack integration
 Voice-based input  
 Calendar availability checking  
 
+
+
+## the final workflow   
+<img width="1365" height="644" alt="image" src="https://github.com/user-attachments/assets/ac1456ff-8e20-4979-a637-ff04f8a6975a" />
+
