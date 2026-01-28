@@ -2,7 +2,7 @@
 
 An AI-powered calendar automation built using Make.com, Google Gemini, OpenAI, and Google Calendar.
 
-This system converts natural language requests into real calendar events automatically.
+This system automatically converts natural language requests into real calendar events.
 
 Example input:
 
