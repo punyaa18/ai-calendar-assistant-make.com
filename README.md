@@ -20,16 +20,16 @@ For more details, read the automation_details.md file
 
 ```mermaid
 graph TD
-    A["📥 Webhook Trigger<br/>User Input: Natural Language"] --> B["🤖 Google Gemini AI<br/>Extract Intent, Date, Time,<br/>Participants, Title"]
-    B --> C["📋 JSON Parsing<br/>Convert to Structured Data"]
-    C --> D["🔧 Tools Module<br/>Format Date/Time<br/>Clean Text & Validate"]
-    D --> E{Router Decision<br/>Sufficient Info?}
-    E -->|Missing Data| F["❓ Request Clarification<br/>Ask User for Missing Info"]
+    A["Webhook Trigger<br/>User Input"] --> B["Google Gemini AI<br/>Extract Data"]
+    B --> C["JSON Parsing<br/>Structured Format"]
+    C --> D["Tools Module<br/>Format & Validate"]
+    D --> E{Sufficient<br/>Information?}
+    E -->|No| F["Request Clarification"]
     F --> A
-    E -->|Complete Data| G["📅 Google Calendar API<br/>Create Event"]
-    G --> H["💬 OpenAI ChatGPT<br/>Generate Natural<br/>Confirmation Message"]
-    H --> I["📤 Webhook Response<br/>Send Result to User"]
-    I --> J["✅ Success Message<br/>Meeting Scheduled!"]
+    E -->|Yes| G["Google Calendar API<br/>Create Event"]
+    G --> H["OpenAI ChatGPT<br/>Generate Response"]
+    H --> I["Webhook Response<br/>Send Result"]
+    I --> J["Success!"]
     
     style A fill:#e1f5ff
     style B fill:#f3e5f5
